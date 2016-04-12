@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
 
+    //jssor library
     var jssor_1_SlideoTransitions = [
         [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
         [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
@@ -12,9 +13,10 @@ jQuery(document).ready(function ($) {
         [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
     ];
 
+    //jssor options (autoplay=true will automatically move slides based on slideduration
     var jssor_1_options = {
-        $AutoPlay: false,
-        $SlideDuration: 800,
+        $AutoPlay: true,
+        $SlideDuration: 2000,
         $SlideEasing: $Jease$.$OutQuint,
         $CaptionSliderOptions: {
             $Class: $JssorCaptionSlideo$,
@@ -24,9 +26,7 @@ jQuery(document).ready(function ($) {
 
     var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-
-
-    //responsive code begin
+    //jssor library UI scaling
     function ScaleSlider() {
         var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
         if (refSize) {
@@ -41,5 +41,4 @@ jQuery(document).ready(function ($) {
     $(window).bind("load", ScaleSlider);
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
-    //responsive code end
 });

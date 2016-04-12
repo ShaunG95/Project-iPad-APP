@@ -1,36 +1,47 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!-- JQuery, JSSOR Slider Library, Javascript and Stylesheet-->
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
     <script src="javascript.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Internet Safety iPad</title>
 </head>
 
-<body style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
+<body>
 
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+    <div id="jssor_1">
+        <div data-u="slides" id=slides>
 
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/red.jpg" />
+            <!--Link 1, Slider Image 1-->
+            <div data-p="225.00">
+                <a href="https://www.thinkuknow.co.uk" target="_blank"><img id="ThinkLogo" src="img/thinkuknow.jpg"></a>
+                <h1 style="font-size: 30px; position: absolute; left: 480px; top: 390px; font-family: arial, serif;">Click the logo to go here!</h1>
+                <a href="https://www.thinkuknow.co.uk" target="_blank"><img src="img/white.jpg"></a>
             </div>
 
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/purple.jpg" />
+            <!--Link 2, Slider Image 2-->
+            <div data-p="225.00">
+                <a href="http://www.safetynetkids.org.uk/personal-safety/staying-safe-online/" target="_blank"><img id="SafetyNetLogo" src="img/SafetyNetKids.jpg"></a>
+                <a href="https://www.thinkuknow.co.uk" target="_blank"><img src="img/white.jpg"></a>
             </div>
 
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/blue.jpg" />
+            <!--Link 3, Slider Image 3-->
+            <div data-p="225.00">
+                <a href="https://www.getsafeonline.org/safeguarding-children/" target="_blank"><img id="GetSafeLogo" src="img/GetSafeOnline.jpg"></a>
+                <a href="https://www.getsafeonline.org/safeguarding-children/" target="_blank"><img src="img/white.jpg"></a>
                 </div>
 
             </div>
         </div>
+
+    <div>
+        <!--Descriptive text about the application-->
+        <p style="text-align: center;">This application is designed to showcase a few of the most visited and highly ranked Internet Safety websites.</p>
     </div>
 
-    <!-- #endregion Jssor Slider End -->
 </body>
 </html>
