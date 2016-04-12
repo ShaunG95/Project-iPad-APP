@@ -13,6 +13,7 @@
         An example for phonegap build docs.
     </description>
 
+    <plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.6.0" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <preference name="DisallowOverscroll" value="true" />
 
