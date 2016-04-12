@@ -43,7 +43,5 @@ jQuery(document).ready(function ($) {
     $(window).bind("orientationchange", ScaleSlider);
 });
 
-$("a[target='_blank']").click(function(e){
-    e.preventDefault();
-    window.open($(e.currentTarget).attr('href'), '_system', '');
-});
+function openDeviceBrowser (externalLinkToOpen){
+    window.open(externalLinkToOpen, '_system', 'location=no');}
