@@ -43,13 +43,7 @@ jQuery(document).ready(function ($) {
     $(window).bind("orientationchange", ScaleSlider);
 });
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    window.open = cordova.InAppBrowser.open;
-}
-
-$(document).on('click', 'a', function (event) {
-    event.preventDefault();
-    window.open($(this).attr('href'), '_system');
-    return false;
+$("a[target='_blank']").click(function(e){
+    e.preventDefault();
+    window.open($(e.currentTarget).attr('href'), '_system', '');
 });
